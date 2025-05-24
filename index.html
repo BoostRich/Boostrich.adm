@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boostrich - Conteúdo com Inteligência</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7f4, #fff);
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(to right, #111, #333);
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #bbb;
+    }
+    .section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .section h2 {
+      color: #222;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      border-left: 5px solid #00c896;
+      padding-left: 0.75rem;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      margin-bottom: 1.5rem;
+      background: #fff;
+      padding: 1.25rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .services li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .cta {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: linear-gradient(to right, #00c896, #007a5c);
+      color: #fff;
+    }
+    .cta h2 {
+      font-size: 2rem;
+    }
+    .cta p {
+      font-size: 1.1rem;
+    }
+    .cta button, .cta a {
+      margin-top: 1.5rem;
+      padding: 0.9rem 1.8rem;
+      background-color: #fff;
+      color: #007a5c;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .cta button:hover, .cta a:hover {
+      background-color: #f4f4f4;
+    }
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    form label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.9rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #00c896;
+      color: #fff;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #009e7f;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Boostrich</h1>
+    <p>Conteúdo com propósito. Análise com resultado.</p>
+  </header>
+
+  <section class="section services">
+    <h2>O que fazemos</h2>
+    <ul>
+      <li><strong>Criação de Conteúdo:</strong> posts para feed, carrosséis, reels e roteiros.</li>
+      <li><strong>Calendário Editorial:</strong> planejamento estratégico para manter consistência.</li>
+      <li><strong>Análise de Desempenho:</strong> relatórios mensais com dados reais e insights.</li>
+      <li><strong>Otimização:</strong> testes A/B e ajustes de estratégia com base em métricas.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Como funciona</h2>
+    <p>Você entra em contato com a Boostrich, escolhe seu plano ou necessidade, e começamos a cuidar do seu conteúdo com estratégia. Tudo sem complicação, direto, e sem precisar mostrar seu rosto — nem o nosso.</p>
+  </section>
+
+  <section class="cta">
+    <h2>Vamos impulsionar sua presença digital?</h2>
+    <p>Preencha o formulário com seu nome, e-mail ou número de WhatsApp e diga como podemos ajudar você:</p>
+    <form action="https://formspree.io/f/xvoejkzk" method="POST">
+      <label for="nome">Seu nome completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required>
+
+      <label for="email">Seu e-mail</label>
+      <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+      <label for="whatsapp">Número do WhatsApp</label>
+      <input type="text" id="whatsapp" name="whatsapp" placeholder="(11) 91234-5678" required>
+
+      <label for="mensagem">Como podemos te ajudar?</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente o que você precisa" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Boostrich. Estratégia, conteúdo e dados sob medida. Sem rosto, só resultado.</p>
+  </footer>
+</body>
+</html>
